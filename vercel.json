@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-C25-Canary-ID", "value": "C25-07c9fc39d7cd" },
+        { "key": "X-DevCurity-Sovereign", "value": "CyGeL-White-Constellation25" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/_c25_canary", "destination": "/canary.json" },
+    { "source": "/.env.canary", "destination": "/canary.json" }
+  ]
+}
